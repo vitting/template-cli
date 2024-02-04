@@ -14,7 +14,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bnb/metaverse.git"
+    "url": "https://github.com/vitting/template-cli.git"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
