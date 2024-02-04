@@ -1,0 +1,61 @@
+{
+  "name": "@test-lib/library-react",
+  "private": false,
+  "version": "0.0.2",
+  "type": "module",
+  "main": "dist/main.mjs",
+  "module": "dist/main.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/main.mjs",
+      "types": "./dist/main.d.ts"
+    },
+    "./stylex/variables.stylex.ts": "./dist/variables.stylex.ts",
+    "./css/stylex.css": "./dist/css/stylex.css",
+    "./css/style.css": "./dist/css/style.css"
+  },
+  "types": "./dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "publish:dryRun": "npm publish --dry-run",
+    "unlink": "npm unlink library-react"
+  },
+  "dependencies": {
+    "unplugin-fonts": "^1.1.1",
+    "vite-plugin-static-copy": "^1.0.1"
+  },
+  "devDependencies": {
+    "@stylexjs/eslint-plugin": "^0.5.1",
+    "@stylexjs/rollup-plugin": "^0.5.1",
+    "@stylexjs/stylex": "^0.5.1",
+    "@types/node": "^20.11.9",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.2",
+    "vite-plugin-stylex": "^0.5.0"
+  },
+  "peerDependencies": {
+    "@stylexjs/stylex": "^0.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
