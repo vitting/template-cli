@@ -12,13 +12,16 @@
   },
   "author": "",
   "license": "ISC",
-  "repository": { 
-  "type": "git", 
-  "url": "https://github.com/bnb/metaverse.git" 
-} ,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bnb/metaverse.git"
+  },
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.13"
   }
 }
